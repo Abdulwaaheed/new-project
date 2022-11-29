@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 600px;
+}
+header ul li:nth-child(1) {
+  width: 25%;
+}
+header ul li:nth-child(2) {
+  width: 75%;
+}
+
+.chap {
+  display: flex;
+}
+.chap .left {
+  display: none;
+  height: 300px;
+  width: 10%;
+  background-color: orangered;
+}
+.chap .right {
+  width: 100%;
+}
+.chap main {
+  height: 200px;
+}
+.chap main section:nth-child(1) {
+  background-color: darkblue;
+  width: 50%;
+}
+.chap main section {
+  width: 25%;
+}
+.chap footer {
+  height: 100px;
+}
+
+@media (max-width: 1200px) {
+  header {
+    height: 600px;
+  }
+  main {
+    height: 200px;
+  }
+  main section:nth-child(1) {
+    background-color: darkblue;
+    width: 50%;
+  }
+  footer {
+    height: 100px;
+  }
+}
+@media (max-width: 850px) {
+  header {
+    height: 400px;
+  }
+  header ul li:nth-child(1) {
+    width: 100%;
+  }
+  header ul li:nth-child(2) {
+    display: none;
+  }
+  .chap .left {
+    display: block;
+    width: 30%;
+    height: 500px;
+  }
+  .chap .right {
+    width: 70%;
+    height: 500px;
+    background-color: green;
+  }
+  .chap .right main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: inherit;
+  }
+  .chap .right main section {
+    height: 300px;
+    width: 100%;
+  }
+  .chap .right main section:nth-child(2) {
+    background-color: yellow;
+    height: 100px;
+  }
+  .chap .right main section:nth-child(3) {
+    height: 100px;
+  }
+  .chap .right footer {
+    display: none;
+  }
+}
+@media (max-width: 350px) {
+  header {
+    height: 300px;
+  }
+  header div:nth-child(1) {
+    height: 50%;
+  }
+  header div:nth-child(1) ul {
+    display: flex;
+    flex-direction: column;
+  }
+  header div:nth-child(1) ul li:nth-child(2) {
+    display: block;
+    width: 100%;
+  }
+  header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .chap {
+    flex-direction: column;
+  }
+  .chap .left {
+    width: 100%;
+    height: 100px;
+    display: none;
+  }
+  .chap .right {
+    width: 100%;
+    height: 600px;
+  }
+  .chap .right section {
+    height: 100px;
+  }
+  .chap .right section:nth-child(3) {
+    height: 200px;
+  }
+}/*# sourceMappingURL=main.css.map */
